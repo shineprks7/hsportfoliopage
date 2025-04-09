@@ -1,0 +1,83 @@
+.tab-btn {
+    
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 0;
+    padding: 0 40px;
+    font-size: 18px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 5;
+    -webkit-transition: all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    -ms-transition: all 0.4s ease-out 0s;
+    -o-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s;
+    background-color: #0898E7;
+    border-radius: 5px; 
+
+}
+
+.portfolio_sub_title
+{
+    color:#fff;
+}
+
+.portfolio-rep-image
+{
+
+}
+.portfolio-rep-image img
+{
+    width: 100%;
+}
+
+.services-hero-image img
+{
+
+    width:100%;
+
+}
+
+.tab-btn:hover {
+    background-color: rgba(8, 152, 231, 0.8);
+    color: #fff; }
+
+.tab-btn.active
+{
+    background-color: #4FA43A;
+}
+
+.portfolio-tab-btn-container
+{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    flex-wrap: wrap;
+    align-items: center;
+
+    margin-top:12px;
+
+}
+
+.portfolio-section{
+    background-color: #26638b !important;
+}
+
+.portfolio-tab-content
+{
+    display: none;
+}
+
+.portfolio-tab-content.active{
+    display: block;
+}
