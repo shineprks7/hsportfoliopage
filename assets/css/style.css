@@ -106,7 +106,7 @@ p {
   font-size: 18px;
   height: 50px;
   line-height: 50px;
-  color: #fff;
+  color: #fff !important;
   cursor: pointer;
   z-index: 5;
   -webkit-transition: all 0.4s ease-out 0s;
@@ -114,7 +114,7 @@ p {
   -ms-transition: all 0.4s ease-out 0s;
   -o-transition: all 0.4s ease-out 0s;
   transition: all 0.4s ease-out 0s;
-  background-color: #0c130d;
+  background-color: #0898E7;
   border-radius: 5px; }
   @media (max-width: 767px) {
     .main-btn {
@@ -123,11 +123,11 @@ p {
       line-height: 40px;
       font-size: 16px; } }
   .main-btn:hover {
-    background-color: rgba(1, 8, 12, 0.8);
+    background-color:blue;
     color: #fff; }
   .main-btn.main-btn-2 {
-    background-color: #fff;
-    color: #0898E7;
+    background-color: #0898E7;
+    color: #fff;
     border-color: #0898E7; }
     .main-btn.main-btn-2:hover {
       background-color: #0898E7;
@@ -137,8 +137,9 @@ p {
 /*===== All Button Style =====*/
 .section_title .sub_title {
   font-size: 20px;
-  font-weight: 700;
-  color: #0898E7; }
+  font-weight: 400;
+
+  color: #000; }
   @media (max-width: 767px) {
     .section_title .sub_title {
       font-size: 18px; } }
@@ -151,7 +152,9 @@ p {
       font-size: 30px; } }
   @media (max-width: 767px) {
     .section_title .title {
-      font-size: 24px; } }
+      font-size: 24px; 
+    
+    } }
 
 /*===== All Preloader Style =====*/
 .preloader {
@@ -707,7 +710,7 @@ p {
   padding: 0 20px;
   height: 45px;
   line-height: 45px;
-  color: #0898E7;
+  color: #fff;
   background-color: transparent;
   border: 2px solid #0898E7; }
   .navbar-btn .main-btn:hover {
@@ -749,7 +752,7 @@ p {
     z-index: -1; }
 
 .slider_content .slider_title {
-  color: #000;
+  color: #fff;
   font-size: 65px;
   font-weight: 700; }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -762,7 +765,7 @@ p {
     .slider_content .slider_title {
       font-size: 45px; } }
 .slider_content p {
-  color: #000;
+  color: #fff;
   max-width: 580px;
   margin-top: 20px;
   font-size: 18px; }
@@ -986,7 +989,12 @@ p {
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
   padding: 50px 30px;
-  border-radius: 10px; }
+  border-radius: 10px; 
+
+  background-color: rgba(0,0,0,0.1);
+
+
+}
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .single_services {
       padding: 30px 20px; } }

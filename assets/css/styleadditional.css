@@ -1,3 +1,29 @@
+.hero-bg-image-wrapper
+{
+    background-image: url("../../assets/images/bg_technology.jpg") !important;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top:0px;
+    left:0px;
+
+}
+
+.hero-bg-overlay
+{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-color: rgba(0,0,0,0.8);
+}
+
+
 .tab-btn {
     
     display: inline-block;
@@ -82,3 +108,505 @@
 .portfolio-tab-content.active{
     display: block;
 }
+
+
+.company_project_info_wrap
+    {
+    justify-content:center;gap:20px
+    }
+
+.company_project_info {
+    width: 20%;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    margin-top: 30px; 
+    border-right: 1px solid #ddd;
+
+}
+
+    .company_project_info_wrap .company_project_info:last-of-type
+    {
+        border:1px solid transparent;
+
+    }
+    @media (max-width: 767px) {
+      .company_project_info {
+        width: 40%; 
+        border:0px solid transparent;
+        box-sizing: border-box;
+    
+    } 
+      
+    .company_project_info_wrap
+    {
+    justify-content:center;gap:20px;
+    position: relative;
+
+    
+
+
+    }
+
+    .company_project_info_wrap::before
+    {
+        content: "";
+        width: 100%;
+        height: 1px;
+        top:50%;
+        left:0px;
+        background-color: #ddd;
+        position: absolute;
+    }
+
+    .company_project_info_wrap::after
+    {
+        content: "";
+        width: 1px;
+        height: 100%;
+        top:0;
+        left:50%;
+        background-color: #ddd;
+        position: absolute;
+    }
+
+   
+    
+    }
+   
+   
+    
+    
+    /* @media only screen and (min-width: 576px) and (max-width: 767px) {
+      .company_project_info {
+        width: 33.33%; } } */
+    .company_project_info .title {
+      font-size: 36px;
+      color:blue;
+      font-weight: bold;
+    }
+  
+    .company_project_info .sub_title{
+      font-size:18px;
+    } 
+      
+
+    .single_brand_alternate_wrap
+    {
+        display: flex;
+        justify-content: center;
+
+        gap:8px;
+    }
+
+
+
+    /* Case Study Gallery */
+
+    .case-study-wrapper
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin:0px;
+        padding: 0px;
+        padding-left: 2px;
+        box-sizing: border-box;
+    }
+
+    .case-study-wrapper .case-study-single
+    {
+      flex:0 0 calc(100%/3);
+      aspect-ratio: 1/1;
+      background-color: salmon;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border:1px solid #000;
+      overflow: hidden;
+
+      position: relative;
+
+    }
+
+    .case-study-wrapper .case-study-single .case-study-image
+   {
+
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+   }
+
+   .case-study-wrapper .case-study-single .case-study-name
+   {
+
+      position: absolute;
+      top:50%;
+      left: 50%;
+
+      color:#000;
+
+      max-width: 80%;
+
+      transform: translate(-50%,-50%);
+      text-align: center;
+
+   }
+
+   .case-study-wrapper .case-study-single .case-study-category
+   {
+
+      position: absolute;
+
+      bottom:20px;
+
+      left: 50%;
+      text-align: center;
+
+      background-color: rgba(0,0,0,0.5);
+      
+
+      transform: translate(-50%,0);
+
+      padding:4px;
+      border-radius: 6px;
+      color:#fff;
+
+   }
+
+    @media (max-width: 767px) {
+
+        .case-study-wrapper .case-study-single
+        {
+            flex:0 0 calc(100%/2);
+
+
+        }
+
+    }
+
+    /* End of Case Study */
+
+
+    /* Start of Solution List */
+
+    .solution-list
+    {
+
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin:0px;
+        padding: 0px;
+        gap: 20px;
+        
+
+    }
+
+    .solution-list .solution-list-item
+    {
+
+
+        flex:0 0 calc(100%/3 - 60px);
+      display: flex;
+      align-items: center;
+
+      padding: 8px 0px 8px 8px;
+    
+      border-bottom: 1px solid #000;
+
+      line-height: 20px;
+      text-align: left;
+
+
+        
+    }
+
+
+    @media (max-width: 767px) {
+        .solution-list .solution-list-item
+        {
+            flex:0 0 calc(100%/1 - 20px);
+
+        }
+
+
+    }
+
+
+
+    /* End of Solution List */
+
+
+
+        /* Start of Content Block */
+
+        .content-block-wrapper
+        {
+    
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin:0px;
+            padding: 0px;
+            gap: 20px;
+            
+    
+        }
+    
+        .content-block-wrapper .content-block-single
+        {
+    
+    
+            flex:0 0 calc(100%/2 - 40px);
+
+            aspect-ratio: 1/1;
+
+          
+    
+        
+    
+    
+    
+            
+        }
+
+
+
+        .content-block-img-wrapper
+        {
+            width: 100%;
+            height: 50%;
+
+            background-color: #4FA43A;
+
+        }
+        .content-block-content
+        {
+            width: 100%;
+            height: 50%;
+            padding:8px;
+
+            overflow: hidden;
+
+
+        }
+
+
+        .content-block-image
+        {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content-block-single .title
+        {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .content-block-single .description
+        {
+            font-size: 16px;
+        }
+
+    
+    
+        @media (max-width: 767px) {
+            .content-block-wrapper .content-block-single
+            {
+                flex:0 0 calc(100%/1 - 20px);
+                aspect-ratio: 1/1;
+
+            }
+    
+    
+        }
+    
+    
+    
+        /* End of Content Block */
+
+
+        
+        /* Start of Testimonial Section */
+
+        .testimonial-block-wrapper
+        {
+    
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin:0px;
+            padding: 40px;
+            gap: 20px;
+
+            background-color: red;
+
+            color:#fff;
+            
+    
+        }
+
+        .testimonial-block-wrapper .bg-cover-image
+        {
+
+        }
+        .testimonial-block-wrapper .bg-overlay
+        {
+            background-color: rgba(0,0,0,0.7);
+
+        }
+
+
+    
+        .testimonial-block-wrapper .testimonial-block-single
+        {
+    
+    
+            flex:0 0 calc(100%/2 - 40px);
+
+
+          
+    
+        
+    
+    
+    
+            
+        }
+
+        .testimonial-block-single .quote-block
+        {
+            display: flex;
+
+            gap:8px;
+
+        }
+
+        .testimonial-user
+        {
+            display: flex;
+            align-items: center;
+             justify-content: center;
+             gap:12px;
+        }
+
+       
+       
+
+
+        
+
+       
+
+    
+    
+        @media (max-width: 767px) {
+            .testimonial-block-wrapper .testimonial-block-single
+            {
+                flex:0 0 calc(100%/1 - 20px);
+                aspect-ratio: 1/1;
+
+            }
+    
+    
+        }
+    
+    
+    
+        /* End of Testimonial Section */
+
+
+
+         /* Start of Why Us Section */
+
+         .whyus-block-wrapper
+         {
+     
+             width: 100%;
+             margin:0px;
+             padding: 40px;
+             gap: 20px;
+ 
+ 
+             color:#fff;
+             
+     
+         }
+ 
+        
+ 
+ 
+     
+         .whyus-flex-list 
+         {
+     
+          display: flex;
+          gap:8px; 
+          align-items: center;
+          margin-top: 16px;
+          margin-bottom: 16px;
+         }
+
+         .whyus-list-icon-box 
+         {
+           
+             background-color: grey;
+             color:#fff;
+             font-size: 24px;
+             padding: 20px;
+             
+
+
+         }
+
+         .whyus-image-wrapper
+         {
+
+            width: 100%;
+            height: 200px;
+            background-color: blue;
+
+         }
+
+         .whyus-image-wrapper img
+         {
+            width:100%;
+            height: 100%;
+            object-fit: cover;
+
+         }
+
+ 
+        
+ 
+        
+        
+ 
+ 
+         
+ 
+        
+ 
+     
+     
+         @media (max-width: 767px) {
+            
+     
+     
+         }
+     
+     
+     
+         /* End of Why us Section */
+
+
+
+        
+
+
+
+
+    
