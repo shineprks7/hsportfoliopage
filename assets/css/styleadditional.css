@@ -228,13 +228,34 @@
       position: relative;
 
     }
+    .case-study-single .case-study-image-wrapper
+    {
+        position: absolute;
+        left: 0px;
+        top:0px;
+        width: 100%;
+        height: 100%;
+    }
 
-    .case-study-wrapper .case-study-single .case-study-image
+   .case-study-single .case-study-image-wrapper img
    {
 
       width: 100%;
       height: 100%;
       object-fit: cover;
+      position: relative;
+
+   }
+   .case-study-single .case-study-image-wrapper::after
+   {
+      content: "";
+      position: absolute;
+      left: 0px;
+      top: 0px;
+
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.4);
 
    }
 
@@ -245,7 +266,10 @@
       top:50%;
       left: 50%;
 
-      color:#000;
+      font-size: 18px;
+      font-weight: bold;
+
+      color:#fff;
 
       max-width: 80%;
 
@@ -283,6 +307,10 @@
 
 
         }
+        .case-study-wrapper .case-study-single .case-study-category
+        {
+           display: none;
+        }
 
     }
 
@@ -300,6 +328,8 @@
         margin:0px;
         padding: 0px;
         gap: 20px;
+
+        justify-content: space-between;
         
 
     }
@@ -312,7 +342,7 @@
       display: flex;
       align-items: center;
 
-      padding: 8px 0px 8px 8px;
+      padding: 8px 0px 8px 0px;
     
       border-bottom: 1px solid #000;
 
@@ -350,9 +380,19 @@
             width: 100%;
             margin:0px;
             padding: 0px;
-            gap: 20px;
+            gap: 40px;
             
+            justify-content: space-between;
     
+        }
+
+        .content-block-wrapper-desktop
+        {
+            display: flex;
+        }
+        .content-block-wrapper-mobile
+        {
+            display: none;
         }
     
         .content-block-wrapper .content-block-single
@@ -361,10 +401,15 @@
     
             flex:0 0 calc(100%/2 - 40px);
 
-            aspect-ratio: 1/1;
 
+            position: relative;
+            overflow: hidden;
+
+            min-height: 200px;
+
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
           
-    
+            
         
     
     
@@ -377,18 +422,24 @@
         .content-block-img-wrapper
         {
             width: 100%;
-            height: 50%;
+            height: 320px;
+            position:relative;
 
             background-color: #4FA43A;
-
+            overflow: hidden;
         }
         .content-block-content
         {
             width: 100%;
-            height: 50%;
+            height: 200px;
             padding:8px;
 
             overflow: hidden;
+
+          
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
 
 
         }
@@ -417,8 +468,16 @@
             .content-block-wrapper .content-block-single
             {
                 flex:0 0 calc(100%/1 - 20px);
-                aspect-ratio: 1/1;
 
+            }
+
+            .content-block-wrapper-desktop
+            {
+                display: none;
+            }
+            .content-block-wrapper-mobile
+            {
+                display: flex;
             }
     
     
@@ -432,6 +491,14 @@
         
         /* Start of Testimonial Section */
 
+        .testimonial-section
+        {
+            background-color: red;
+
+            color:#fff;
+            padding: 20px 0px 20px 0px;
+
+        }
         .testimonial-block-wrapper
         {
     
@@ -439,12 +506,11 @@
             flex-wrap: wrap;
             width: 100%;
             margin:0px;
-            padding: 40px;
             gap: 20px;
 
-            background-color: red;
+            padding:40px 0px 40px 0px;
 
-            color:#fff;
+          
             
     
         }
@@ -507,7 +573,6 @@
             .testimonial-block-wrapper .testimonial-block-single
             {
                 flex:0 0 calc(100%/1 - 20px);
-                aspect-ratio: 1/1;
 
             }
     
@@ -519,6 +584,112 @@
         /* End of Testimonial Section */
 
 
+
+               /* Start of Technologies Section */
+
+               .technologies-section
+               {
+                  
+                   padding: 20px 0px 20px 0px;
+                   color:#fff;
+                   position: relative;
+       
+               }
+               .technologies-bg-image-wrapper
+               {
+                   background-image: url("../../assets/images/other/technology_bg1.avif") !important;
+               
+                   background-repeat: no-repeat;
+                   background-size: cover;
+                   background-position: center;
+                   width: 100%;
+                   height: 100%;
+                   position:absolute;
+                   top:0px;
+                   left:0px;
+                   z-index: -1;
+               
+               }
+               
+               .technologies-bg-overlay
+               {
+                   width: 100%;
+                   height: 100%;
+                   position:absolute;
+                   top:0px;
+                   left:0px;
+                   background-color: rgba(0,0,0,0.8);
+                   z-index: -1;
+
+               }
+
+               .technologies-block-wrapper
+               {
+           
+                  
+                   width: 100%;
+                   margin:0px;
+       
+                   padding:40px 0px 40px 0px;
+
+                   text-align: center;
+                
+                 
+                   
+           
+               }
+       
+              
+       
+       
+           
+               .technologies-block-wrapper .technologies-block-single
+               {
+           
+           
+                    width: 66%;
+
+                    margin-left: auto;
+                    margin-right: auto;
+       
+                 
+           
+               
+           
+           
+           
+                   
+               }
+       
+              
+       
+              
+       
+              
+              
+       
+       
+               
+       
+              
+       
+           
+           
+               @media (max-width: 767px) {
+                   .testimonial-block-wrapper .testimonial-block-single
+                   {
+                       flex:0 0 calc(100%/1 - 20px);
+       
+                   }
+           
+           
+               }
+           
+           
+           
+               /* End of technologies block Section */
+
+               
 
          /* Start of Why Us Section */
 
@@ -553,20 +724,30 @@
          .whyus-list-icon-box 
          {
            
-             background-color: grey;
+             background-color: rgb(103, 32, 150);
              color:#fff;
-             font-size: 24px;
-             padding: 20px;
+             width: 48px;
+             height: 48px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
              
 
 
          }
+         .whyus-list-icon-box  span
+         {
+            display: inline-block;
+            font-size: 18px;
+
+         }
+
 
          .whyus-image-wrapper
          {
 
             width: 100%;
-            height: 200px;
+            height: 360px;
             background-color: blue;
 
          }

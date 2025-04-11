@@ -145,8 +145,11 @@ p {
       font-size: 18px; } }
 .section_title .title {
   font-size: 40px;
-  font-weight: 700;
-  margin-top: 25px; }
+  font-weight: 500;
+  margin-top: 25px; 
+  color:#000;
+
+}
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .section_title .title {
       font-size: 30px; } }
@@ -1002,7 +1005,7 @@ p {
     .single_services {
       padding: 30px 20px; } }
   .single_services .services_icon i {
-    color: #4FA43A;
+    color: #0898E7;
     font-size: 56px;
     line-height: 60px;
     -webkit-transition: all 0.3s ease-out 0s;
@@ -1045,13 +1048,13 @@ p {
         .single_services .services_content p {
           font-size: 14px; } }
   .single_services:hover {
-    background-color: #4FA43A; }
+    background-color: #ddd; }
     .single_services:hover .services_icon i {
-      color: #fff; }
+      color: #0898E7; }
     .single_services:hover .services_content .services_title a {
-      color: #fff; }
+      color: #0898E7; }
     .single_services:hover .services_content p {
-      color: #fff; }
+      color: #0898E7; }
 
 /*===========================
         12.FOOTER css 
