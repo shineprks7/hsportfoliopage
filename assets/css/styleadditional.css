@@ -699,12 +699,29 @@
            
            
                @media (max-width: 767px) {
-                   .testimonial-block-wrapper .testimonial-block-single
+                   .technologies-block-wrapper .technologies-block-single
                    {
 
                        width: 100%;
 
        
+                   }
+
+                   .technologies-block-wrapper
+                   {
+               
+                      
+                       width: 100%;
+                       margin:0px;
+           
+                       padding:40px 8px 40px 8px;
+    
+                       text-align: left;
+                       margin:0px;
+                    
+                     
+                       
+               
                    }
 
                    
