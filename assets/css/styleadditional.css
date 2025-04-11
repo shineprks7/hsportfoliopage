@@ -422,7 +422,8 @@
         .content-block-img-wrapper
         {
             width: 100%;
-            height: 320px;
+            max-width: 100%;
+            height: auto;
             position:relative;
 
             background-color: #4FA43A;
@@ -431,8 +432,8 @@
         .content-block-content
         {
             width: 100%;
-            height: 200px;
-            padding:8px;
+            height: auto;
+            padding:20px;
 
             overflow: hidden;
 
@@ -478,6 +479,24 @@
             .content-block-wrapper-mobile
             {
                 display: flex;
+
+                justify-content: center;
+            }
+
+            .content-block-img-wrapper
+            {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                position:relative;
+    
+                background-color: #4FA43A;
+                overflow: hidden;
+            }
+            .content-block-content
+            {
+              height: auto;
+
             }
     
     
@@ -678,9 +697,13 @@
                @media (max-width: 767px) {
                    .testimonial-block-wrapper .testimonial-block-single
                    {
-                       flex:0 0 calc(100%/1 - 20px);
+
+                       width: 90%;
+
        
                    }
+
+                   
            
            
                }
@@ -698,7 +721,7 @@
      
              width: 100%;
              margin:0px;
-             padding: 40px;
+             padding: 8px 0px 8px 0px;
              gap: 20px;
  
  
@@ -747,7 +770,8 @@
          {
 
             width: 100%;
-            height: 360px;
+            max-width: 100%;
+            height: auto;
             background-color: blue;
 
          }
@@ -775,7 +799,26 @@
      
          @media (max-width: 767px) {
             
-     
+            .whyus-list-icon-box 
+            {
+              
+                background-color: rgb(103, 32, 150);
+                color:#fff;
+                width: 80px;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+   
+   
+            }
+            .whyus-list-icon-box  span
+            {
+               display: inline-block;
+               font-size: 36px;
+   
+            }
      
          }
      
