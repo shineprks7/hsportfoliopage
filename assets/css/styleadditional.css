@@ -360,6 +360,10 @@
             flex:0 0 calc(100%/1 - 20px);
 
         }
+        .solution-list
+    {
+        justify-content: center;
+    }
 
 
     }
@@ -698,7 +702,7 @@
                    .testimonial-block-wrapper .testimonial-block-single
                    {
 
-                       width: 90%;
+                       width: 100%;
 
        
                    }
