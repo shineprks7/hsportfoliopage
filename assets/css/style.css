@@ -6,7 +6,7 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: normal;
   font-style: normal;
-  color: #747E88; }
+  color: #101316; }
 
 * {
   margin: 0;
@@ -50,7 +50,7 @@ h5,
 h6 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
-  color: #38424D;
+  color: #262e36;
   margin: 0px; }
 
 h1 {
@@ -80,7 +80,7 @@ p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  color: #747E88;
+  color: #494f55;
   margin: 0px; }
 
 .bg_cover {
