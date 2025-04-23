@@ -25,7 +25,101 @@
 .hero_section_title
 {
     color:#fff !important;
+
+    height: 1.5em;
+    overflow: hidden;
+
 }
+.hero_section_title_text
+{
+    display: inline-block;
+    top:100%;
+    position: relative;
+
+}
+.hero_section_title_text_animation 
+{
+    animation: textrising 0.5s ease-in forwards;
+
+}
+
+.hero_section_title_text_animation_1
+{
+    animation-delay: 1s;
+}
+.hero_section_title_text_animation_2
+{
+    animation-delay: 2s;
+}
+.hero_section_title_text_animation_3
+{
+    animation-delay: 3s;
+}
+
+.hero_section_button
+{
+
+    opacity: 0;
+    animation: herobutton 0.5s ease-in forwards;
+
+    animation-delay: 4s;
+
+    overflow: hidden;
+
+
+    transition: box-shadow 0.3s ease;
+    background-color: rgb(72, 72, 160);
+}
+
+.hero_section_button:hover
+{
+    box-shadow: 0 0 15px #00f7ff, 0 0 30px #00f7ff;
+}
+
+
+.hero_section_button_text_animation 
+{
+    top: 100%;
+    display: inline-block;
+    position: relative;
+    animation: textrising 0.5s ease-in forwards;
+
+    animation-delay: 4.5s;
+
+}
+
+
+
+@keyframes textrising {
+    0% {
+        top:100%;
+        opacity: 0;
+        
+    }
+    100%{
+        top:0px;
+        opacity: 1;
+
+    }
+    
+}
+
+@keyframes herobutton {
+    0% {
+        opacity: 0;
+        
+    }
+    100%{
+        opacity: 1;
+
+    }
+    
+}
+
+
+
+
+
 .hero_section_content  > h1
 {
  color:#fff;
@@ -638,8 +732,8 @@
 
          .section-about-us
          {
-            background-color: #2940d3;
-            color:#fff;
+            /* background-color: #2940d3; */
+            /* color:#fff; */
             padding: 40px 0px 40px 0px;
          }
                  .about-us-wrapper
@@ -670,7 +764,7 @@
 
             min-height: 400px;
 
-            color:#fff;
+            /* color:#fff; */
 
           
             
@@ -682,17 +776,17 @@
         }
         .about-us-wrapper .about-us-single > p
         {
-            color:#fff;
+            /* color:#fff; */
 
         }
         .about-us-wrapper .about-us-single > h3
         {
-            color:#fff;
+            /* color:#fff; */
 
         }
         .about-us-wrapper .about-us-single > h4
         {
-            color:#fff;
+            /* color:#fff; */
 
         }
 
@@ -1016,3 +1110,149 @@
 
 
     
+
+
+.typable-text-header
+{
+    white-space: pre-wrap;
+
+}
+
+.typable-text-header span
+{
+    opacity: 0;
+    display: inline-block;
+}
+
+.typable-text-header.active span
+{
+  
+    animation: typeIn 0.5s forwards;
+
+    animation-delay: calc(0.2s + var(--i) *  0.05s);
+
+}
+
+@keyframes typeIn
+{
+    to{
+        opacity: 1;
+    }
+}
+
+.typable-text-paragraph
+{
+    white-space: pre-wrap;
+
+}
+.typable-text-paragraph span
+{
+    opacity: 0;
+    display: inline-block;
+
+}
+
+.typable-text-paragraph.active span
+{
+    opacity: 0;
+    display: inline-block;
+    animation: typeIn 0.5s forwards;
+
+    animation-delay: calc(0.2s + var(--i) *  0.05s);
+
+}
+
+@keyframes typeIn
+{
+    to{
+        opacity: 1;
+    }
+}
+.solution-list-animation .solution-list-item
+{
+    position: relative;
+    overflow: hidden;
+}
+
+.solution-list-animation .solution-list-item::after
+{
+
+    content: '';
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+
+    background-color: #fff;
+
+   
+
+
+
+   
+}
+
+.solution-list-animation .solution-list-item.active::after
+{
+    animation: solutionlistanimation 0.5s ease-in forwards;
+
+    animation-delay: 0.2s;
+
+}
+
+@keyframes solutionlistanimation
+{
+    from{
+    }
+    to{
+        left: 100%;
+
+    }
+}
+
+
+.image-reveal-animation
+{
+    position: relative;
+    overflow: hidden;
+}
+
+.image-reveal-animation::after
+{
+
+    content: '';
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+
+    background-color: #fff;
+
+   
+
+
+
+   
+}
+
+.image-reveal-animation.active::after
+{
+    animation: imagereveal 0.5s ease-in forwards;
+
+    animation-delay: 0.3s;
+
+}
+
+@keyframes imagereveal
+{
+    from{
+    }
+    to{
+        left: 100%;
+
+    }
+}
+
+
