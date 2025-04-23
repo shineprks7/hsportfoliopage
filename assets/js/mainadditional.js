@@ -124,5 +124,6 @@ document.querySelectorAll(".typable-text-header").forEach(el => observer.observe
 document.querySelectorAll(".solution-list-animation .solution-list-item").forEach(el => observer.observe(el));
 
 document.querySelectorAll(".image-reveal-animation").forEach(el => observer.observe(el));
+document.querySelectorAll(".aboutus-image-reveal-animation").forEach(el => observer.observe(el));
 
 

@@ -732,9 +732,10 @@
 
          .section-about-us
          {
-            /* background-color: #2940d3; */
-            /* color:#fff; */
+            background-color: #2940d3; 
+            color:#fff;
             padding: 40px 0px 40px 0px;
+            margin-top: 24px;
          }
                  .about-us-wrapper
         {
@@ -764,7 +765,7 @@
 
             min-height: 400px;
 
-            /* color:#fff; */
+            color:#fff;
 
           
             
@@ -776,17 +777,17 @@
         }
         .about-us-wrapper .about-us-single > p
         {
-            /* color:#fff; */
+            color:#fff;
 
         }
         .about-us-wrapper .about-us-single > h3
         {
-            /* color:#fff; */
+            color:#fff;
 
         }
         .about-us-wrapper .about-us-single > h4
         {
-            /* color:#fff; */
+            color:#fff;
 
         }
 
@@ -802,6 +803,11 @@
             background-color: #4FA43A;
             overflow: hidden;
         }
+
+       
+
+       
+
 
 
         
@@ -1127,7 +1133,7 @@
 .typable-text-header.active span
 {
   
-    animation: typeIn 0.5s forwards;
+    animation: typeIn 0.005s forwards;
 
     animation-delay: calc(0.2s + var(--i) *  0.05s);
 
@@ -1156,9 +1162,9 @@
 {
     opacity: 0;
     display: inline-block;
-    animation: typeIn 0.5s forwards;
+    animation: typeIn 0.005s forwards;
 
-    animation-delay: calc(0.2s + var(--i) *  0.05s);
+    animation-delay: calc(1.2s + var(--i) *  0.05s);
 
 }
 
@@ -1237,11 +1243,31 @@
    
 }
 
+.aboutus-image-reveal-animation::after
+{
+    content: '';
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #2940d3 !important;
+
+}
+
+.aboutus-image-reveal-animation.active::after
+{
+    animation: imagereveal 0.5s ease-in forwards;
+
+    animation-delay: 2.2s;
+
+}
+
 .image-reveal-animation.active::after
 {
     animation: imagereveal 0.5s ease-in forwards;
 
-    animation-delay: 0.3s;
+    animation-delay: 2.5s;
 
 }
 
@@ -1255,4 +1281,19 @@
     }
 }
 
+
+.animation-delay-level-1
+{
+    animation-delay: 0.3s !important;
+}
+
+.animation-delay-level-2
+{
+    animation-delay: 0.8s !important;
+}
+
+.animation-delay-level-3
+{
+    animation-delay: 4s !important;
+}
 
