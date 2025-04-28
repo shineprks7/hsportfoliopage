@@ -20,13 +20,15 @@
     position:absolute;
     top:0px;
     left:0px;
-    background-color: rgba(0,0,0,0.8);
+    /* background-color: rgba(0,0,0,0.8); */
+
+    background-color: rgb(2 1 16 / 50%);
 }
 .hero_section_title
 {
     color:#fff !important;
-
-    height: 1.5em;
+    
+    height: 2em !important;
     overflow: hidden;
 
 }
@@ -68,12 +70,19 @@
 
 
     transition: box-shadow 0.3s ease;
-    background-color: rgb(72, 72, 160);
+    background-color: rgb(230, 230, 240);
+
+    color: #2940d3 !important;
+    font-weight: bold;
+    letter-spacing: 1.2px;
 }
 
 .hero_section_button:hover
 {
-    box-shadow: 0 0 15px #00f7ff, 0 0 30px #00f7ff;
+    /* box-shadow: 0 0 15px #00f7ff, 0 0 30px #00f7ff; */
+
+    background-color: rgb(230, 230, 240);
+
 }
 
 
@@ -296,7 +305,7 @@
         width: 33.33%; } } */
     .company_project_info .title {
       font-size: 36px;
-      color:blue;
+      color:rgb(3, 3, 10);
       font-weight: bold;
     }
   
@@ -330,7 +339,7 @@
 
     .case-study-wrapper .case-study-single
     {
-      flex:0 0 calc(100%/3);
+      flex:0 0 calc(100%/2);
       aspect-ratio: 1/1;
       background-color: salmon;
       display: flex;
@@ -446,6 +455,43 @@
         justify-content: space-between;
         
 
+    }
+
+    .services-section
+    {
+
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin:0px;
+        padding: 0px;
+        gap: 40px;
+        
+        justify-content: space-between;
+
+    }
+
+   
+
+    .services-section-wrapper .services-section-single
+    {
+
+
+        flex:0 0 calc(100%/1 - 40px);
+
+
+        position: relative;
+        overflow: hidden;
+
+
+
+      
+        
+    
+
+
+
+        
     }
 
     .solution-list .solution-list-item
@@ -1082,7 +1128,32 @@
  .technogy-sub-section
  {
     margin-top: 24px;
+    padding: 20px;
+
+    position: relative;
+    border-radius: 12px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    overflow: hidden;
  }
+
+ .technogy-sub-section::before
+
+ {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    width: 100%;
+    height: 8px;
+    background:linear-gradient(to bottom,#00aaff,#0077cc);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-top-right-radius:12px ;
+    border-top-left-radius:12px ;
+
+ }
+
 
  .techstack-image-container
  {
@@ -1095,6 +1166,26 @@
  .techstack-image-wrap
  {
     width: 100px;
+
+    position: relative;
+    
+ }
+
+ .techstack-image-wrap:first-of-type
+
+ {
+    
+
+ }
+
+ .techstack-image-wrap:last-of-type
+
+ {
+    padding:20px;
+
+    border:0px;
+
+
  }
  .techstack-image-wrap img
  {
